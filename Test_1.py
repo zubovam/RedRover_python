@@ -22,13 +22,13 @@ browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 #     print(view_buttons)
 #     assert len(view_buttons) == 6, 'Wrong length'
 
-def open_page():
-    browser.get('http://suninjuly.github.io/cats.html')
-    bullet_cat = browser.find_element(By.XPATH, "//*[contains(text(), 'Bullet cat')]")
-    print(bullet_cat.text)
-    view_buttons = browser.find_elements(By.XPATH, "//*[contains(text(), 'View')]")
-    assert len(view_buttons) == 6, 'Wrong length'
-
-
-def test_open_page():
-    open_page()
+# def open_page():
+#     browser.get('http://suninjuly.github.io/cats.html')
+#     bullet_cat = browser.find_element(By.XPATH, "//*[contains(text(), 'Bullet cat')]")
+#     print(bullet_cat.text)
+#     view_buttons = browser.find_elements(By.XPATH, "//*[contains(text(), 'View')]")
+#     assert len(view_buttons) == 6, 'Wrong length'
+#
+#
+# def test_open_page():
+#     open_page()

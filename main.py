@@ -12,9 +12,4 @@
 # a1 = Animal("Bob", "Dog", 5, "good", "50lb", "brown")
 # print(a1.__dict__)
 
-def solution(start, finish):
 
-    return (finish - start // 3) + (finish - start % 3)
-
-
-print(solution(1, 5))
